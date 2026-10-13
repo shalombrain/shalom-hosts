@@ -50,31 +50,24 @@ export default function FAQEditorial() {
   return (
     <section
       id="faq"
-      className="bg-[var(--background)] text-[var(--text-primary)]"
-      style={{
-        minHeight: "100svh",
-        display: "flex",
-        alignItems: "center",
-        paddingTop: "100px",
-        paddingBottom: "100px",
-      }}
+      className="bg-[var(--background)] text-[var(--text-primary)] pt-8 pb-10 lg:pt-[100px] lg:pb-[100px]"
     >
       <div className="container w-full">
 
         <div
+          className="flex flex-col lg:grid"
           style={{
-            display: "grid",
             gridTemplateColumns: "minmax(280px, 0.8fr) minmax(400px, 1.2fr)",
             gap: "clamp(60px, 10vw, 150px)",
             alignItems: "start",
           }}
         >
 
-          {/* LEFT */}
+          {/* LEFT: Pinned cleanly below navbar with a tight 16px bottom margin */}
           <div
+            className="sticky top-[88px] z-20 bg-[var(--background)] pt-3 lg:top-[120px] lg:z-auto lg:p-0"
             style={{
-              position: "sticky",
-              top: "120px",
+              marginBottom: "16px",
             }}
           >
             <h2
@@ -105,9 +98,9 @@ export default function FAQEditorial() {
 
             <a
               href="#contact"
-              className="inline-flex items-center"
+              className="inline-flex items-center lg:mb-0"
               style={{
-                marginTop: "40px",
+                marginTop: "32px",
                 fontSize: "18px",
                 fontWeight: 500,
                 color: "var(--text-primary)",
@@ -128,6 +121,7 @@ export default function FAQEditorial() {
 
           {/* RIGHT */}
           <div
+            className="relative z-10"
             style={{
               borderTop: "1px solid var(--border)",
             }}

@@ -30,12 +30,6 @@ const logos = [
     url: "https://techpoint.africa",
   },
   {
-    name: "PiggyVest",
-    mono: "/logos/piggyvest-mono.svg",
-    color: "/logos/piggyvest.svg",
-    url: "https://piggyvest.com",
-  },
-  {
     name: "GenZtechies",
     mono: "/logos/genztechies-mono.svg",
     color: "/logos/genztechies.svg",
@@ -68,10 +62,10 @@ const logos = [
 ];
 
 const stats = [
-  { value: 120, suffix: "+", label: "Events Hosted" },
-  { value: 18000, suffix: "+", label: "Audience Members" },
-  { value: 40, suffix: "+", label: "Brands Served" },
-  { value: 6, suffix: "+", label: "Years Experience" },
+  { value: 80, suffix: "+", label: "Events Hosted" },
+  { value: 25000, suffix: "+", label: "Audience Members" },
+  { value: 35, suffix: "+", label: "Brands Served" },
+  { value: 5, suffix: "+", label: "Years Experience" },
 ];
 
 function CountUp({
@@ -210,7 +204,7 @@ export default function Hero() {
   }}
   className="inline-flex min-h-[64px] min-w-[260px] items-center justify-center rounded-[var(--radius-md)] px-[32px] py-5 text-[17px] font-medium tracking-[-0.01em] text-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-black"
 >
-  Book Shalom Your Event
+  Book Shalom for your Event
 </Link>
 
             <Link
